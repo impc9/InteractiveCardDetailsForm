@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card-img">
+      <div class="card-front">
+        <!-- <img src="images/bg-card-front.png" alt=""> -->
+        <svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+        <p id="showNum">0000 0000 0000 0000</p>
+        <p id="showName">YOUR NAME</p>
+        <p id="showExpDate">MM/YY</p>
+      </div>
+
+      <div class="card-back">
+        <p id="showCVC">123</p>
+      </div>
+    </div>
+
+    <div class="card-details" id="workingPage">
+
+        <p>CARDHOLDER NAME</p>
+        <input type="text" placeholder="Enter Your Name" id="yourName">
+        <small id="nameValid" class="validity">Name must be 2-30 character long and should not starts with numbers</small>
+    
+        <p>CARD NUMBER</p>
+        <input type="text" placeholder="0000 0000 0000 0000" id="cardNum">
+        <small id="numValid">Wrong format. Numbers only and must be 16 digits only</small>
+
+      <div class="section">
+        <div class="box1">
+          <p>EXP. DATE(MM/YY)</p>
+          <input type="number" placeholder="MM" id="dateMM">
+          <input type="number" placeholder="YY" id="dateYY">
+          <small id="dateValid">Error! Cant't be blank fill correct detail</small>
+        </div>
+
+        <div class="box2">
+          <p>CVC</p>
+          <input type="number" placeholder="e.g. 123" id="cardCVC">
+          <small id="cvcValid">Cant't be blank and must be 3 digits only</small>
+        </div>
+      </div>
+
+        <button id="confirmBtn">Confirm</button>
+        <small id="confirmValid">Incorrect information. Please check again</small>
+    </div>
+    <div class="completeCont" id="completePage">
+      <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+      <h1>THANK YOU!</h1>
+      <p>we've added your card details</p>
+      <button id="continueBtn">Continue</button>
+    </div>
+  </div>
+
+  
+
+  <!-- Completed state start -->
+
+  <!-- Thank you!
+  We've added your card details
+  Continue -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">IMPC</a>.
+  </div>
+</body>
+<script src="index.js"></script>
+</html>
